@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.word {
+  max-width: 960px;
+  text-align: left;
+  margin: 10px auto;
+
+  & .name {
+      font-size: 20px;
+    color: red;
+    padding: 0 20px 0 0;
+   }
+
+  & .meaning {
+  font-size: 20px;
+    color: white;
+   }
+
+  & .meaning:hover {
+    color: dodgerblue;
+  }
+
+}
