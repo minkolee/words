@@ -35,7 +35,7 @@ class App extends React.Component {
 
     render() {
 
-        //调用词霸接口的方法. 无法跨域
+        //调用词霸接口的方法. 无法跨域, 所以就写在render里先留着
         fetch("http://fy.iciba.com/ajax.php?a=fy&f=en-US&t=zh-CN&w=deflate").then(
             res =>{
                 res.json().then(data => console.log(data.content.ph_am)).catch(e => console.log(e));
